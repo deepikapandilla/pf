@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    color: hsl(0, 19%, 89%);
+
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+.container{
+    padding: 10px 10%;
+}
+.logo{
+    width:100px;
+    font-size:50px;
+    color: lavender;
+    margin-left: 30%;
+
+
+}
+.logo img{
+    border-radius:300px;
+    height: 300px;
+}
+nav{
+    padding :50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul  li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content:"";
+    width: 0;
+    height: 3px;
+    background: lightslategray;
+    position: absolute;
+    left:0;
+    bottom: -7px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.header-text h1 span{
+    color: lightcoral;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header-text{
+    margin-top:-5%;
+    font-size:20px;
+
+
+}
+
+
+/* --------------------about----------------- */
+
+#about{
+    padding: 90px 0;
+    color: white;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis:35%;
+}
+.about-col-1 img{
+    width: 60%;
+    height: 70%;
+    border-radius:15px;
+}
+.about-col-2 {
+    flex-basis:60%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.about-col-2 h1{
+    color: aqua;
+}
+.sub-title{
+    font-size: 40px;
+    font-weight: 400;
+    color: aqua;
+}
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor:pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:"";
+    width:0;
+    height: 3px;
+    background: lightslategray;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: lightpink;
+
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* ------------------------------Services------------------------- */
+#services{
+    padding: 170px 0;
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    color: darkblue;
+    font-size: 20px;
+}
+.services-list div{
+    background: lightpink;
+    padding:40px;
+    font-size:20px;
+    font-weight: 300;
+    border-radius:10px;
+    transition:background 0.5s, transform 0.5s;
+}
+.services-list div h2{
+    color: saddlebrown;
+    font-size:30px;
+    font-weight:500;
+    margin-bottom:15px;
+}
+.services-list div a{
+    text-decoration:none;
+    color:darkblue;
+    font-size:20px;
+    margin-top:20px;
+    display:inline-block;
+}
+.services-list div:hover{
+    background: aquamarine;
+    transform:translateY(-10px);
+}
+#contact{
+    padding:300px 0;
+}
+.contact-left{
+    flex-basis:35%;
+}
+.contact-left p{
+    margin-top:30px;
+}
+.contact-left p i{
+    color:#ff004f;
+    margin-right:15px;
+    font-size:25px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 15px;
+    color: whitesmoke;
+    display: inline-block;
+    transition:transform 0.5s;
+}
+.social-icons a:hover{
+    color: dodgerblue;
+    transform: translateY(-5px);
+}
